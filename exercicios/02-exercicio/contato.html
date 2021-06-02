@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <h1>Forumário de Contato</h1>
+    <h2><a href="/">Voltar ao CV</a></h2>
+    <form>
+        <label>Nome:</label>
+        <input type="text" name="nome" 
+            value="" placeholder="Digite seu nome" required/>
+        <br>
+        <label>Sobrenome:</label>
+        <input type="text" name="sobrenome" 
+            value="" placeholder="Digite seu sobrenome" required/>
+        <br>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="exemplo@exemplo.com" required/>
+        <br>
+            <input type="radio" name="genero" value="Masculino">
+            <label>Masculino</label>
+            <input type="radio" name="genero" value="Feminino">
+            <label>Feminino</label>
+            <input type="radio" name="genero" value="Prefiro não informar">
+            <label>Prefiro não informar</label>
+        <hr>
+
+        <select name="assunto">
+            <option selected disable value="">Selecione o assunto </option>
+                <option value="RE">reclamação</option>
+                <option value="DU">duvidas</option>
+                <option value="SU">sugestões</option>
+            </option>
+        </select>
+        <br>
+        <h3>Hobbies</h3>
+        <input type="checkbox" name="hobbies" value="Surf">
+        <label>Surf</label>
+        
+        <input type="checkbox" name="hobbies" value="Música">
+        <label>Música</label>
+
+        <input type="checkbox" name="hobbies" value="Futebol">
+        <label>Futebol</label>
+
+        <input type="checkbox" name="hobbies" value="Jogos eletrônicos">
+        <label>Jogos eletrônicos</label>
+
+        <input type="checkbox" name="hobbies" value="Séries e filmes">
+        <label>Séries e filmes</label>
+        <hr>
+
+        <h3>Comentários:</h3>
+        <textarea required></textarea>
+        <br>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Cadastrar</button>
+
+    </form>
+</body>
+</html>
