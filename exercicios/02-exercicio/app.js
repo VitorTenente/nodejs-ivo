@@ -10,9 +10,9 @@ const server = http.createServer(
 
         if (request.url === '/') {
             arquivo = 'index.html';
-        } else if (request.url === '/hobbies.html') {
+        } else if (request.url === '/hobbies') {
             arquivo = 'hobbies.html'
-        } else if (request.url === '/contato.html') {
+        } else if (request.url === '/contato') {
             arquivo = 'contato.html'
         } else {
             arquivo = 'erro.html'
